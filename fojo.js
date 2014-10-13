@@ -105,7 +105,7 @@
 				// on error
 				error: function(xhr, status, message) {
 					this.trigger('error', [message]);
-				},
+				}.bind(this),
 				// on success
 				success : function(response) {
 					this.trigger('response', [response]);
