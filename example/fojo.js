@@ -1,12 +1,12 @@
 /**
  * Fojo - Form Object submission with a JS Object
  *
- * @version 0.0.1
+ * @version 0.0.2
  * @author Christian Blanquera <cblanquera@openovate.com>
  * @website https://github.com/cblanquera/fojo
  * @license MIT
  */
- (function() {
+(function() {
 	var fojo = function() {
 		/* Require
 		-------------------------------*/
@@ -241,8 +241,8 @@
 					return;
 				} 
 				
-				if(__isNative(settings)) {
-					result[property] = settings;
+				if(__isNative(data)) {
+					result[property] = data;
 					return;
 				}
 				
